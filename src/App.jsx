@@ -4,10 +4,10 @@ import "./App.css";
 function App() {
   const [name, setName] = useState();
   const [count, setCount] = useState();
-  // 1. get reference to DOM elements
+  // 1. get reference to DOM elements/manupulate dom directly without causing a re-render
   const inputRef = useRef();
   const contentRef = useRef(null);
-  //2. count how many times a component has rendered
+  //2. store a value that persists across renders
   const renderCount = useRef(0);
 
   useEffect(() => {
