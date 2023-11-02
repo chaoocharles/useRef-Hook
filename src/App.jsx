@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [name, setName] = useState();
   const [count, setCount] = useState();
-  // 1. storing reference to DOM elements
+  // 1. get reference to DOM elements
   const inputRef = useRef();
   const contentRef = useRef(null);
   //2. count how many times a component has rendered
